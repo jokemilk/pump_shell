@@ -62,53 +62,97 @@
    <widget class="QLineEdit" name="HEATBEAT">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>100</y>
+      <x>45</x>
+      <y>130</y>
       <width>160</width>
       <height>90</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>28</pointsize>
+     </font>
+    </property>
     <property name="cursor">
      <cursorShape>BlankCursor</cursorShape>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QLineEdit" name="CNT">
     <property name="geometry">
      <rect>
-      <x>230</x>
-      <y>100</y>
+      <x>225</x>
+      <y>130</y>
       <width>160</width>
       <height>90</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>28</pointsize>
+     </font>
+    </property>
     <property name="cursor">
      <cursorShape>BlankCursor</cursorShape>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QLineEdit" name="COMP_RATIO">
     <property name="geometry">
      <rect>
-      <x>410</x>
-      <y>100</y>
+      <x>405</x>
+      <y>130</y>
       <width>160</width>
       <height>90</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>28</pointsize>
+     </font>
+    </property>
     <property name="cursor">
      <cursorShape>BlankCursor</cursorShape>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QLineEdit" name="VOLUME">
     <property name="geometry">
      <rect>
-      <x>590</x>
-      <y>100</y>
+      <x>585</x>
+      <y>130</y>
       <width>160</width>
       <height>90</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>28</pointsize>
+     </font>
+    </property>
     <property name="cursor">
      <cursorShape>BlankCursor</cursorShape>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="SET">
@@ -153,6 +197,78 @@
      <string>压力</string>
     </property>
    </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>95</x>
+      <y>80</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>22</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>心率</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>275</x>
+      <y>80</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>22</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>计数</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>445</x>
+      <y>80</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>22</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>压缩比</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>80</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>22</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>压缩率</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
@@ -177,4 +293,10 @@
  <layoutdefault spacing="6" margin="11"/>
  <resources/>
  <connections/>
+ <slots>
+  <slot>on_START_clicked()</slot>
+  <slot>on_SET_clicked()</slot>
+  <slot>on_STOP_clicked()</slot>
+  <slot>on_PRESSURE_clicked()</slot>
+ </slots>
 </ui>

@@ -17,6 +17,7 @@ struct THERAPY_CONFIG{
     double compress_ratio; 	//压缩比
     uint volume;		    //压缩总量
     uint heart_beat;
+
 };
 
 extern struct THERAPY_CONFIG thero;

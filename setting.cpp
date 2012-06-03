@@ -10,9 +10,10 @@ setting::setting(QWidget *parent) :
     ui(new Ui::setting)
 {
     ui->setupUi(this);
-    int myW=QDirectPainter::screenWidth();
-    int myH=QDirectPainter::screenWidth();
-    this->resize(myW,myH);
+//    int myW=QDirectPainter::screenWidth();
+//    int myH=QDirectPainter::screenWidth();
+//    this->resize(myW,myH);
+    this->setWindowFlags(Qt::FramelessWindowHint);
     this->ui->volume->setText(temp.setNum(thero.volume,10));
     this->ui->heart_beat->setText(temp.setNum(thero.heart_beat,10));
     sprintf(tempch,"%.1f",thero.compress_ratio);

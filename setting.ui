@@ -14,16 +14,16 @@
    <cursorShape>OpenHandCursor</cursorShape>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Setting</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>130</x>
+      <x>120</x>
       <y>90</y>
-      <width>91</width>
-      <height>31</height>
+      <width>120</width>
+      <height>40</height>
      </rect>
     </property>
     <property name="font">
@@ -41,10 +41,10 @@
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>340</x>
+      <x>330</x>
       <y>90</y>
-      <width>91</width>
-      <height>31</height>
+      <width>120</width>
+      <height>40</height>
      </rect>
     </property>
     <property name="font">
@@ -62,10 +62,10 @@
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>520</x>
+      <x>510</x>
       <y>90</y>
-      <width>91</width>
-      <height>31</height>
+      <width>120</width>
+      <height>40</height>
      </rect>
     </property>
     <property name="font">
@@ -84,7 +84,7 @@
     <property name="geometry">
      <rect>
       <x>90</x>
-      <y>140</y>
+      <y>150</y>
       <width>160</width>
       <height>90</height>
      </rect>
@@ -111,7 +111,7 @@
     <property name="geometry">
      <rect>
       <x>290</x>
-      <y>140</y>
+      <y>150</y>
       <width>160</width>
       <height>90</height>
      </rect>
@@ -138,7 +138,7 @@
     <property name="geometry">
      <rect>
       <x>480</x>
-      <y>140</y>
+      <y>150</y>
       <width>160</width>
       <height>90</height>
      </rect>
@@ -165,7 +165,7 @@
     <property name="geometry">
      <rect>
       <x>90</x>
-      <y>250</y>
+      <y>260</y>
       <width>71</width>
       <height>51</height>
      </rect>
@@ -188,7 +188,7 @@
     <property name="geometry">
      <rect>
       <x>180</x>
-      <y>250</y>
+      <y>260</y>
       <width>71</width>
       <height>51</height>
      </rect>
@@ -211,7 +211,7 @@
     <property name="geometry">
      <rect>
       <x>90</x>
-      <y>320</y>
+      <y>330</y>
       <width>71</width>
       <height>51</height>
      </rect>
@@ -234,7 +234,7 @@
     <property name="geometry">
      <rect>
       <x>180</x>
-      <y>320</y>
+      <y>330</y>
       <width>71</width>
       <height>51</height>
      </rect>
@@ -257,7 +257,7 @@
     <property name="geometry">
      <rect>
       <x>380</x>
-      <y>320</y>
+      <y>330</y>
       <width>71</width>
       <height>51</height>
      </rect>
@@ -280,7 +280,7 @@
     <property name="geometry">
      <rect>
       <x>290</x>
-      <y>320</y>
+      <y>330</y>
       <width>71</width>
       <height>51</height>
      </rect>
@@ -303,7 +303,7 @@
     <property name="geometry">
      <rect>
       <x>380</x>
-      <y>250</y>
+      <y>260</y>
       <width>71</width>
       <height>51</height>
      </rect>
@@ -326,7 +326,7 @@
     <property name="geometry">
      <rect>
       <x>290</x>
-      <y>250</y>
+      <y>260</y>
       <width>71</width>
       <height>51</height>
      </rect>
@@ -349,7 +349,7 @@
     <property name="geometry">
      <rect>
       <x>530</x>
-      <y>320</y>
+      <y>330</y>
       <width>71</width>
       <height>51</height>
      </rect>
@@ -372,7 +372,7 @@
     <property name="geometry">
      <rect>
       <x>530</x>
-      <y>250</y>
+      <y>260</y>
       <width>71</width>
       <height>51</height>
      </rect>
@@ -395,7 +395,7 @@
     <property name="geometry">
      <rect>
       <x>650</x>
-      <y>270</y>
+      <y>280</y>
       <width>111</width>
       <height>71</height>
      </rect>
@@ -412,22 +412,6 @@
      <string>返回</string>
     </property>
    </widget>
-  </widget>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>800</width>
-     <height>25</height>
-    </rect>
-   </property>
-   <widget class="QMenu" name="menuSetting">
-    <property name="title">
-     <string>Setting</string>
-    </property>
-   </widget>
-   <addaction name="menuSetting"/>
   </widget>
  </widget>
  <resources/>

@@ -21,7 +21,7 @@
     <property name="geometry">
      <rect>
       <x>70</x>
-      <y>270</y>
+      <y>310</y>
       <width>120</width>
       <height>80</height>
      </rect>
@@ -42,7 +42,7 @@
     <property name="geometry">
      <rect>
       <x>250</x>
-      <y>270</y>
+      <y>310</y>
       <width>120</width>
       <height>80</height>
      </rect>
@@ -63,7 +63,7 @@
     <property name="geometry">
      <rect>
       <x>45</x>
-      <y>130</y>
+      <y>170</y>
       <width>160</width>
       <height>90</height>
      </rect>
@@ -87,7 +87,7 @@
     <property name="geometry">
      <rect>
       <x>225</x>
-      <y>130</y>
+      <y>170</y>
       <width>160</width>
       <height>90</height>
      </rect>
@@ -111,7 +111,7 @@
     <property name="geometry">
      <rect>
       <x>405</x>
-      <y>130</y>
+      <y>170</y>
       <width>160</width>
       <height>90</height>
      </rect>
@@ -135,7 +135,7 @@
     <property name="geometry">
      <rect>
       <x>585</x>
-      <y>130</y>
+      <y>170</y>
       <width>160</width>
       <height>90</height>
      </rect>
@@ -159,7 +159,7 @@
     <property name="geometry">
      <rect>
       <x>430</x>
-      <y>270</y>
+      <y>310</y>
       <width>120</width>
       <height>80</height>
      </rect>
@@ -180,7 +180,7 @@
     <property name="geometry">
      <rect>
       <x>610</x>
-      <y>270</y>
+      <y>310</y>
       <width>120</width>
       <height>80</height>
      </rect>
@@ -201,13 +201,14 @@
     <property name="geometry">
      <rect>
       <x>95</x>
-      <y>80</y>
-      <width>81</width>
-      <height>31</height>
+      <y>100</y>
+      <width>90</width>
+      <height>40</height>
      </rect>
     </property>
     <property name="font">
      <font>
+      <family>文泉驿微米黑</family>
       <pointsize>22</pointsize>
      </font>
     </property>
@@ -219,13 +220,14 @@
     <property name="geometry">
      <rect>
       <x>275</x>
-      <y>80</y>
-      <width>81</width>
-      <height>31</height>
+      <y>100</y>
+      <width>90</width>
+      <height>40</height>
      </rect>
     </property>
     <property name="font">
      <font>
+      <family>文泉驿微米黑</family>
       <pointsize>22</pointsize>
      </font>
     </property>
@@ -236,14 +238,15 @@
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>445</x>
-      <y>80</y>
-      <width>91</width>
-      <height>31</height>
+      <x>440</x>
+      <y>100</y>
+      <width>120</width>
+      <height>40</height>
      </rect>
     </property>
     <property name="font">
      <font>
+      <family>文泉驿微米黑</family>
       <pointsize>22</pointsize>
      </font>
     </property>
@@ -254,14 +257,15 @@
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
-      <x>620</x>
-      <y>80</y>
-      <width>91</width>
-      <height>31</height>
+      <x>610</x>
+      <y>100</y>
+      <width>120</width>
+      <height>40</height>
      </rect>
     </property>
     <property name="font">
      <font>
+      <family>文泉驿微米黑</family>
       <pointsize>22</pointsize>
      </font>
     </property>
@@ -269,25 +273,6 @@
      <string>压缩率</string>
     </property>
    </widget>
-  </widget>
-  <widget class="QMenuBar" name="menuBar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>800</width>
-     <height>25</height>
-    </rect>
-   </property>
-   <widget class="QMenu" name="menuPump_shell_beta">
-    <property name="cursor">
-     <cursorShape>OpenHandCursor</cursorShape>
-    </property>
-    <property name="title">
-     <string>pump_shell beta</string>
-    </property>
-   </widget>
-   <addaction name="menuPump_shell_beta"/>
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>

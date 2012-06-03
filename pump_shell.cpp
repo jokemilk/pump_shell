@@ -31,9 +31,10 @@ pump_shell::pump_shell(QWidget *parent) :
     ui(new Ui::pump_shell)
 {
     ui->setupUi(this);
-    int myW=QDirectPainter::screenWidth();
-    int myH=QDirectPainter::screenWidth();
-    this->resize(myW,myH);
+//    int myW=QDirectPainter::screenWidth();
+//    int myH=QDirectPainter::screenWidth();
+//    this->resize(myW,myH);
+    this->setWindowFlags(Qt::FramelessWindowHint);
     connect(ui->START,SIGNAL(clicked()),this,SLOT(b_start()));
     connect(ui->STOP,SIGNAL(clicked()),this,SLOT(b_stop()));
     fb = open("/dev/pump", O_RDWR, S_IRUSR | S_IWUSR);

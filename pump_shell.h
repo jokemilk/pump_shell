@@ -15,9 +15,6 @@ public:
     explicit pump_shell(QWidget *parent = 0);
     void update();
     ~pump_shell();
-public slots:
-    void b_start();
-    void b_stop();
 protected:
     void changeEvent(QEvent *);
 private slots:
@@ -31,6 +28,7 @@ private slots:
 
 private:
     Ui::pump_shell *ui;
+    bool running;
 };
 
 #endif // PUMP_SHELL_H

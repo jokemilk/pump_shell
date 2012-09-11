@@ -48,6 +48,7 @@ pump_shell::pump_shell(QWidget *parent) :
     sprintf(tempch,"%.1f",thero.compress_ratio);
     this->ui->COMP_RATIO->setText(QString(tempch));
     this->ui->CNT->setText(temp.setNum(cnt,10));
+    this->running=FALSE;
 }
 
 pump_shell::~pump_shell()
@@ -66,33 +67,55 @@ void pump_shell::changeEvent(QEvent *e)
     }
 }
 
-void pump_shell::b_start()
-{
-    ioctl(fb,PUMP_START_T2);
-}
-
-void pump_shell::b_stop()
-{
-    ioctl(fb,PUMP_STOP_T2);
-}
 
 void pump_shell::on_START_clicked()
 {
-
+    if(!this->running)
+    {
+        double temp=thero.heart_beat*(1+thero.compress_ratio);
+        temp = 60./temp;
+        //计算参数
+        thero.time_push_acc=temp*2500;
+        thero.time_push_avg=temp*30000;
+        temp=60./thero.heart_beat-temp;
+        thero.time_pull_acc=temp*2500;
+        thero.time_pull_avg=temp*30000;
+        temp=(1+thero.compress_ratio)*thero.volume/4.;
+        thero.pwm_rate[0]=(uint)temp;
+        temp=(1+thero.compress_ratio)/(4.*thero.compress_ratio)*thero.volume;
+        thero.pwm_rate[1]=(uint)temp;
+        //配置参数
+        ioctl(fb,PUMP_SET_PUSH_ACC,thero.time_push_acc);
+        ioctl(fb,PUMP_SET_PUSH_AVG,thero.time_push_avg);
+        ioctl(fb,PUMP_SET_PULL_ACC,thero.time_pull_acc);
+        ioctl(fb,PUMP_SET_PULL_ACC,thero.time_pull_avg);
+        ioctl(fb,PUMP_SET_PWM0,thero.pwm_rate[0]);
+        ioctl(fb,PUMP_SET_PWM1,thero.pwm_rate[1]);
+        //开定时器
+        ioctl(fb,PUMP_START_T2);
+        this->running=TRUE;
+    }
 }
 
 void pump_shell::on_STOP_clicked()
 {
-
+    if(this->running)
+    {
+        ioctl(fb,PUMP_STOP_T2);
+        this->running=FALSE;
+    }
 }
 
 setting *s;
 void pump_shell::on_SET_clicked()
 {
 //    setting *s = new setting;
-    if(s==NULL)
-        s=new setting;
-    s->show();
+    if(!this->running)
+    {
+        if(s==NULL)
+            s=new setting;
+        s->show();
+    }
 }
 
 void pump_shell::on_PRESSURE_clicked()
